@@ -9,10 +9,15 @@ int main()
     std::cout << "Enter c" << std::endl;
     std::cin >> c;
 
-    int min = a;
-    if (b < min) { min = b; }
-    if (c < min) { min = c; }
-    sum = a + b + c - min;
-    3
+    if (a>=c && b>=c){
+        sum = a + b;
+    }
+    else if (b>=a && c>=a){
+        sum = b + c;
+    }
+    else{
+        sum = a + c;
+    }
+    std::cout << "sum= " << sum << std::endl;
     return 0;
 }
