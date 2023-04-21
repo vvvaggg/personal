@@ -13,6 +13,6 @@ int main()
     if (b < min) { min = b; }
     if (c < min) { min = c; }
     sum = a + b + c - min;
-    3
+
     return 0;
 }
